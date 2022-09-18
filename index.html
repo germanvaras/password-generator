@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e8f62e9a4c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main class="main">
+        <img  class="logo" src="logo.png" alt="logo">
+        <h1>Generador de contraseñas</h1>
+        <form action="" class="app" id="app">
+            <div class="row characters">
+                <div class="column column-characters" >
+                    <label for="characters-numbers">Cantidad de caracteres:</label>
+                    <p class="conditions">Mínimo 8 - Máximo 20</p>
+                </div>
+
+                <div class="column">
+                    <button class="button minus-button" id="minus-button">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="text" id="characters-numbers" readonly value="12">
+                    <button class="button plus-button" id="plus-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row symbol">
+                <div class="column">
+                    <label for="symbol">¿Incluir Símbolos?</label>
+                </div>
+                <div class="column">
+                    <button class="button check" id="symbols"><i class="fa-solid fa-check"></i> </button>
+                </div>
+            </div>
+            <div class="row numbers">
+                <div class="column">
+                    <label for="symbol">¿Incluir Números?</label>
+                </div>
+                <div class="column">
+                    <button class="button check" id="numbers"><i class="fa-solid fa-check"></i> </button>
+                </div>
+            </div>
+            <div class="row uppercase">
+                <div class="column">
+                    <label for="uppercasel">¿Incluir Mayúsculas?</label>
+                </div>
+                <div class="column">
+                    <button class="button check" id="uppercase"><i class="fa-solid fa-check"></i> </button>
+                </div>
+            </div>
+            <div class=" row">
+                <div class="column">
+                    <button class="button  button-generator" id="button-generator">Generar 
+                        <i class="fa-solid fa-lock"></i>
+                </button>
+                </div>
+                <div class="column password-container">
+                    <input type="text" class="input-password" id="input-password" readonly value="">
+                    <p class="conditions">Click  para copiar contraseña</p>
+                </div>
+            </div>
+            </div>
+        </form>
+    </main>
+    <script src="/js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
